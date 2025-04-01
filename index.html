@@ -11,9 +11,10 @@
 </head>
 <body>
   <main id="content-main">
-    <figure id="content-image">
-      <img src="images/image-product-desktop.jpg" alt= "Image product">
-    </figure>
+    <picture id="content-image">
+      <source srcset="images/image-product-desktop.jpg" media="(min-width: 748px)">
+      <img src="images/image-product-mobile.jpg" alt="Imagem do produto">
+    </picture>    
     <div id="content">
       <div id="content-text">
         <span>Perfume</span>
@@ -27,7 +28,7 @@
       </ul>
       <button id="content-button">
         <img src="images/icon-cart.svg" alt="image cart icon">
-        <p>Add to Cart</p>
+        <span>Add to Cart</span>
       </button>
     </div>
   </main>  
